@@ -43,7 +43,7 @@ const SanAndres = ({ isMenuShown }) => {
     <div className="flex flex-col items-center pt-32">
       <PageSection
         name="/ejecafetero"
-        title="ejecafetero"
+        title="San Andrés"
         subtitle={`Es una isla colombiana ubicada en el mar caribe, es una de las más grandes que forma parte del Archipiélago de San Andrés, Providencia y Santa Catalina; conocido como el mar de los 7 colores.`}
       >
         <div className="grid lg:grid-cols-2 gap-8 mb-24 ">

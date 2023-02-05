@@ -43,7 +43,7 @@ const Cartagena = ({ isMenuShown }) => {
     <div className="flex flex-col items-center pt-32">
       <PageSection
         name="/ejecafetero"
-        title="ejecafetero"
+        title="Cartagena"
         subtitle={`Es uno de los principales destinos turísticos de Colombia. Esta ciudad cuenta con una gran historia y grandes atractivos naturales. Dentro de los lugares históricos están: El Castillo de San Felipe, el Palacio de la Inquisición, Torre del Reloj, murallas, calles coloniales y sus hermosas playas.`}
       >
         <div className="grid lg:grid-cols-2 gap-8 mb-24 ">

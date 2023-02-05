@@ -43,7 +43,7 @@ const EjeCafetero = ({ isMenuShown }) => {
     <div className="flex flex-col items-center pt-32">
       <PageSection
         name="/ejecafetero"
-        title="ejecafetero"
+        title="Eje Cafetero"
         subtitle={`Es una región geográfica, cultural y ecológica de Colombia. Tiene hermosas haciendas y casonas tradicionales rurales onde se puede apreciar las tradiciones de los primeros colonos antioqueños, cada rincón está lleno de historia y hermosos cafetales.`}
       >
         <div className="grid lg:grid-cols-2 gap-8 mb-24 ">

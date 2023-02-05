@@ -89,34 +89,26 @@ const Promotions = ({ isMenuShown }) => {
 
   return (
     <div className="flex flex-col items-center pt-32">
-      <PageSection
-        name="/ejecafetero"
-        title="ejecafetero"
-        subtitle={`Es una región geográfica, cultural y ecológica de Colombia. Tiene hermosas haciendas y casonas tradicionales rurales, donde se puede apreciar las tradiciones de los primeros colonos antioqueños, cada rincón está lleno de historia y hermosos cafetales.`}
-      >
-        <div
-          name="sklfj"
-          className="w-full bg-grandit-to-b from-gray-800 to-black text-white mb-20"
-        >
-          <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4">
-            <div className="grid gap-8  sm:grid-cols-2 sm:px-0 md:grid-cols-3">
-              {travels.map(({ id, src, code }) => (
-                <div
-                  key={id}
-                  className="rounded-lg shadow-lg shadow-thBlue duration-300 hover:scale-105 flex items-center justify-center"
-                >
-                  <a href={code} target="_blank" rel="noreferrer">
-                    <img
-                      src={src}
-                      alt=""
-                      className="rounded-md duration-200 hover:scale-105 object-cover "
-                    />
-                  </a>
-                </div>
-              ))}
-            </div>
+      <PageSection>
+        <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center mb-36">
+          <div className="grid gap-8 sm:grid-cols-2 sm:px-0 md:grid-cols-3  ">
+            {travels.map(({ id, src, code }) => (
+              <div
+                key={id}
+                className="rounded-lg shadow-lg shadow-thBlue duration-300 hover:scale-105 flex items-center justify-center"
+              >
+                <a href={code} target="_blank" rel="noreferrer">
+                  <img
+                    src={src}
+                    alt=""
+                    className="rounded-md duration-200 hover:scale-105 object-cover "
+                  />
+                </a>
+              </div>
+            ))}
           </div>
         </div>
+
         <HeroSection isMenuShown={isMenuShown} />
         <Contact />
       </PageSection>

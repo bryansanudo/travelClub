@@ -9,26 +9,32 @@ const NavBar = ({ isMenuShown, setIsMenuShown }) => {
     {
       id: 1,
       link: "inicio",
+      text: "inicio",
     },
     {
       id: 2,
       link: "sanandres",
+      text: "San Andrés",
     },
     {
       id: 3,
       link: "cartagena",
+      text: "cartagena",
     },
     {
       id: 4,
       link: "ejecafetero",
+      text: "eje cafetero",
     },
     {
       id: 5,
       link: "santamarta",
+      text: "santa marta",
     },
     {
       id: 6,
       link: "promotions",
+      text: "promociones",
     },
   ];
   const useScrollToTop = () => {
@@ -53,10 +59,10 @@ const NavBar = ({ isMenuShown, setIsMenuShown }) => {
 
           <div className="hidden lg:flex items-center">
             <ul className="flex">
-              {links.map(({ id, link }) => (
+              {links.map(({ id, link, text }) => (
                 <Link key={id} to={`/${link}`}>
-                  <li className="p-4 uppercase duration-300 hover:text-thBlue cursor-pointer">
-                    {link}
+                  <li className="p-4 uppercase duration-300 hover:text-thBlue cursor-pointer tracking-widest">
+                    {text}
                   </li>
                 </Link>
               ))}
@@ -78,14 +84,14 @@ const NavBar = ({ isMenuShown, setIsMenuShown }) => {
         }`}
       >
         <ul>
-          {links.map(({ id, link }) => (
+          {links.map(({ id, link, text }) => (
             <Link
               key={id}
               to={`/${link}`}
               onClick={() => setIsMenuShown(!isMenuShown)}
             >
               <li className="p-4 uppercase cursor-pointer duration-300 hover:text-thBlue">
-                {link}
+                {text}
               </li>
             </Link>
           ))}

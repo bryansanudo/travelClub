@@ -43,7 +43,7 @@ const SantaMarta = ({ isMenuShown }) => {
     <div className="flex flex-col items-center pt-32">
       <PageSection
         name="/ejecafetero"
-        title="ejecafetero"
+        title="Santa Marta"
         subtitle={`Hermosa ciudad conocida como la Perla de América, ubicada en el mar Caribe. Se conoce por sus actividades turísticas, historia y playas. El Rodadero, conocido como uno de los principales destinos del Caribe Colombiano cuenta con la Sierra Nevada de Santa Marta.`}
       >
         <div className="grid lg:grid-cols-2 gap-8 mb-24 ">
