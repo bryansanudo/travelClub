@@ -6,7 +6,8 @@ import Home from "@/components/Home";
 import SanAndres from "@/components/SanAndres";
 import Cartagena from "@/components/Cartagena";
 import EjeCafetero from "@/components/EjeCafetero";
-import Others from "@/components/Others";
+import SantaMarta from "@/components/SantaMarta";
+import Promotions from "@/components/Promotions";
 import HeroSection from "@/components/HeroSection";
 
 function App() {
@@ -26,13 +27,26 @@ function App() {
           }
         >
           <Route index element={<Home isMenuShown={isMenuShown} />} />
-          <Route path="sanandres" element={<SanAndres />} />
-          <Route path="cartagena" element={<Cartagena />} />
+          <Route
+            path="sanandres"
+            element={<SanAndres isMenuShown={isMenuShown} />}
+          />
+          <Route
+            path="cartagena"
+            element={<Cartagena isMenuShown={isMenuShown} />}
+          />
           <Route
             path="ejecafetero"
             element={<EjeCafetero isMenuShown={isMenuShown} />}
           />
-          <Route path="others" element={<Others />} />
+          <Route
+            path="santamarta"
+            element={<SantaMarta isMenuShown={isMenuShown} />}
+          />
+          <Route
+            path="promotions"
+            element={<Promotions isMenuShown={isMenuShown} />}
+          />
 
           <Route path="*" element={<Navigate replace to="/" />} />
         </Route>

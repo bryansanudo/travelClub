@@ -24,7 +24,11 @@ const NavBar = ({ isMenuShown, setIsMenuShown }) => {
     },
     {
       id: 5,
-      link: "otros",
+      link: "santamarta",
+    },
+    {
+      id: 6,
+      link: "promotions",
     },
   ];
   return (
