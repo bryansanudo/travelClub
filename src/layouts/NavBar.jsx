@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 import travelLogo from "@/assets/travelLogo.png";
 
 const NavBar = ({ isMenuShown, setIsMenuShown }) => {
@@ -31,8 +31,16 @@ const NavBar = ({ isMenuShown, setIsMenuShown }) => {
       link: "promotions",
     },
   ];
+  const useScrollToTop = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+      window.scroll({ top: 0, left: 0, behavior: "smooth" });
+    }, [pathname]);
+  };
+
   return (
     <>
+      {useScrollToTop()}
       <div className="fixed w-full h-24 bg-black text-white z-20">
         <div className="flex justify-between lg:justify-center md:gap-5 items-center max-w-screen-xl mx-auto px-4 h-full">
           <div>

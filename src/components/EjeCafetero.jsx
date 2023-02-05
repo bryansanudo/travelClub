@@ -29,13 +29,13 @@ const EjeCafetero = ({ isMenuShown }) => {
     {
       id: 1,
       src: ejecafeteroVideo1,
-      code: "",
+      code: "/EjeCafetero.pdf",
       ref: ref1,
     },
     {
       id: 2,
       src: ejecafeteroVideo2,
-      code: "",
+      code: "/EjeCafetero.pdf",
       ref: ref2,
     },
   ];
@@ -44,7 +44,7 @@ const EjeCafetero = ({ isMenuShown }) => {
       <PageSection
         name="/ejecafetero"
         title="ejecafetero"
-        subtitle={`Es una región geográfica, cultural y ecológica de Colombia. Tiene hermosas haciendas y casonas tradicionales rurales, donde se puede apreciar las tradiciones de los primeros colonos antioqueños, cada rincón está lleno de historia y hermosos cafetales.`}
+        subtitle={`Es una región geográfica, cultural y ecológica de Colombia. Tiene hermosas haciendas y casonas tradicionales rurales onde se puede apreciar las tradiciones de los primeros colonos antioqueños, cada rincón está lleno de historia y hermosos cafetales.`}
       >
         <div className="grid lg:grid-cols-2 gap-8 mb-24 ">
           <div className="col-span-2 flex items-center justify-center">
@@ -67,7 +67,7 @@ const EjeCafetero = ({ isMenuShown }) => {
               key={id}
               className="rounded-lg flex flex-col items-center justify-centerp-4  text-center col-span-2"
             >
-              <a href={code} targe="_blank" rel="noreferrer">
+              <a href={code} target="_blank" rel="noreferrer">
                 <video
                   ref={ref}
                   src={src}
@@ -76,7 +76,7 @@ const EjeCafetero = ({ isMenuShown }) => {
                   playsInline
                   autoPlay
                   muted
-                  className="rounded-lg shadow-lg shadow-thBlue object-cover w-[20rem] h-[15rem] md:w-screen md:h-[17rem] duration-300  "
+                  className="rounded-lg shadow-lg shadow-thBlue object-cover w-[20rem] h-[15rem] md:w-screen md:h-[17rem] duration-300 hover:scale-105 "
                 />
               </a>
             </div>

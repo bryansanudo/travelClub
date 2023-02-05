@@ -3,7 +3,7 @@ import React from "react";
 const ContacForm = () => {
   return (
     <div className="p-4 text-left m-12 mx-auto">
-      <form action="">
+      <form action="#">
         <div className="grid lg:grid-cols-2 gap-4 w-full py-2">
           <div className="flex flex-col col-span-2 lg:col-span-1">
             <label className="capitalize text-sm py-2 font-light">Nombre</label>
@@ -43,8 +43,8 @@ const ContacForm = () => {
           </div>
         </div>
         <div className="flex items-center justify-center">
-          <button className="mt-6 flex items-center justify-center rounded-full shadow-lg shadow-thBlue hover:scale-110 duration-300 p-3 cursor-pointer w-[7rem]">
-            enviar
+          <button className="mt-6 flex items-center justify-center rounded-full shadow-md shadow-thBlue hover:scale-110 duration-300 p-3 cursor-pointer w-[7rem]">
+            Enviar
           </button>
         </div>
       </form>
