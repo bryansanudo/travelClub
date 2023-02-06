@@ -65,7 +65,7 @@ const SanAndres = ({ isMenuShown }) => {
           {travels.map(({ id, src, code, ref }) => (
             <div
               key={id}
-              className="rounded-lg flex flex-col items-center justify-centerp-4  text-center col-span-2"
+              className="rounded-lg flex flex-col items-center justify-centerp-4  text-center md:col-span-1 col-span-2"
             >
               <a href={code} target="_blank" rel="noreferrer">
                 <video
@@ -76,7 +76,7 @@ const SanAndres = ({ isMenuShown }) => {
                   playsInline
                   autoPlay
                   muted
-                  className="rounded-lg shadow-lg shadow-thBlue object-cover w-[20rem] h-[15rem] md:w-screen md:h-[17rem] duration-300 hover:scale-105"
+                  className="rounded-lg shadow-lg shadow-thBlue object-cover w-[20rem] h-[15rem] md:w-screen md:h-[35rem] duration-300 hover:scale-105"
                 />
               </a>
             </div>

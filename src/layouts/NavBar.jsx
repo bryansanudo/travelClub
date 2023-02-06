@@ -34,7 +34,7 @@ const NavBar = ({ isMenuShown, setIsMenuShown }) => {
     {
       id: 6,
       link: "promotions",
-      text: "promociones",
+      text: "Ofertas",
     },
   ];
   const useScrollToTop = () => {
