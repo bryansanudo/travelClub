@@ -16,7 +16,7 @@ const Contact = () => {
             className="object-cover duration-300 w-[350px] h-[200px] md:w-[500px] md:h-[250px] shadow-lg shadow-thBlue rounded-lg"
           />
           <p className="py-12 max-w-md text-center">
-            Para una asesoria directa, No dudes en contactarnos
+            Para una asesoria directa, No dudes en contactarnos.
           </p>
 
           <div className="">
